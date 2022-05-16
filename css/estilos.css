@@ -138,13 +138,61 @@ ul li:hover ul{
 }
 
 .portada__productos{
-    color: rgb(22, 22, 128);
-    background-color: rgb(241, 239, 239);
-    font-family: 'Roboto Slab', serif
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    padding: 30px;
+    border: none;
+    border-radius: 50%;
+    color: rgb(223, 236, 247);
+    background: rgb(17, 0, 101)
+    
 }
-
-
+.portada__item1{
+    border:groove 20px rgb(48, 48, 164);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.portada__item2{
+    border:groove 20px rgb(48, 48, 164);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.portada__item3{
+    border:groove 20px rgb(48, 48, 164);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.portada__item4{
+    border:groove 20px rgb(48, 48, 164);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.portada__item5{
+    border:groove 20px rgb(48, 48, 164);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.portada__item6{
+    border:groove 20px rgb(48, 48, 164);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.portada__item7{
+    border:groove 20px rgb(48, 48, 164);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+    
 .destacado{
     display: flex;
     flex-direction: column;
