@@ -3,6 +3,14 @@ header{
     display: flex;
     flex-direction: column;
 }
+/*.logoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}*/
+
 .header__titulo{
     display: flex;
     flex-direction: column;
@@ -23,6 +31,26 @@ header{
     
 }
 
+.bg-color{
+    background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+}
+
+.font-color a{
+    color:rgb(255, 255, 255);
+}
+
+a:visited{
+    color: rgb(194, 209, 225);
+}
+/* quiero agregarle color a las letras del nav cuando paso el mouse pero no puedo
+.nav-item:hover{
+    transform: ;
+}
+
+.dropdown-menu{
+    background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+    color: white;
+}
 /* flex direction, wrap es para que se agrupen cuando achico la pantalla*/
 
 li{
@@ -31,43 +59,14 @@ li{
 a{
     text-decoration: none;
 }
-
+/*
 .header__navegacion li>a{
     color:rgb(241, 239, 239) ;
     padding: 0,5rem;
     font-family: 'Roboto Slab', serif
-    
-   
-}
-
-    /* esto es para menu desplegable- */
-
-ul{
-    list-style-type:none;
-    font-size: 0px;
-}
-li{
-    display: inline-block;
-    width: 20vw;
-    position: relative;
-    font-size: 1rem;
-}
-ul ul{
-    position: absolute;
-    display: none;
-}
-ul ul li{
-    display:block;
-
-}
-
-ul li:hover ul{
-    display: block;
-    background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
-    padding: 1px;
-    margin: 0px;
-}
-    
+      
+}   
+*/
            /**/
 .buscador{
     display: flex;
@@ -84,8 +83,40 @@ ul li:hover ul{
     background-color: aliceblue;
     color: rgb(33, 33, 167);
     border: 5px solid rgb(43, 91, 182);
-    
 }
+
+.container{
+    width: 40rem;
+}
+.container__tituloDos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-image: linear-gradient(to top, black, rgb(28, 56, 112));
+    color: rgb(247, 136, 155);
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: xx-large;
+
+    border: 10px solid rgb(45, 57, 151)  
+}
+.container__padreBoton{
+    align-self: center;
+ 
+ }
+ 
+ .container__boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to top, black, rgb(28, 56, 112));
+ 
+    color: rgb(235, 157, 170);
+ }
+ .container__boton:hover{
+    transform: scale(2);
+ }
 .portada{
     display: flex;
     flex-direction: row;
@@ -99,63 +130,9 @@ ul li:hover ul{
     /* probar con flex direction, background image ,height, justify content center, align item center*/
 
 }
-.portada__padreImagen{
-    align-self: center;
-
-}
-
-.img__planchita{
-    height: fit-content;
-}
-.portada__tituloDos{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    padding: 2rem;
-    background-image: linear-gradient(to top, black, grey);
-    color: rgb(247, 136, 155);
-    border: 10px solid rgb(148, 165, 53)
-    
-    
-    
-}
-
-
-.portada__imagen{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    background-image: linear-gradient(to top, black, grey);
-
-    padding: 1rem;
-    margin: 1rem;
-    border: 10px solid rgb(150, 150, 54);
-    width: 40vw;
-    height: 60vh;
-    border-radius: 1rem;
-}
 
 /* ancho se dice width y alto height */
 
-
-.portada__padreBoton{
-   align-self: center;
-
-}
-
-.portada__boton{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: linear-gradient(to top, black, grey);
-
-    color: yellow;
-}
-.portada__boton:hover{
-    transform: scale(2);
-}
 
 .portada__productos{
     color: rgb(22, 22, 128);
@@ -164,7 +141,7 @@ ul li:hover ul{
 
 }
 
-
+/* index ultima section*/
 .destacado{
     display: flex;
     flex-direction: column;
