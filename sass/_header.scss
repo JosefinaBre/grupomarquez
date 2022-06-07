@@ -1,0 +1,31 @@
+header{
+    
+    &__titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+        color:rgb(241, 239, 239) ;
+        font-family: 'Roboto Slab', serif;
+    }/*aca pasa algo que se me rompe*/
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__navegacion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+        color:rgb(241, 239, 239) ;
+    }
+    &__header{/* aca lo que tendria que hacer es algo para que cuando es hamburguesa no quede al medio*/
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content: center;
+        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+    }
+}

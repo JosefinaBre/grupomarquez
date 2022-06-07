@@ -1,0 +1,539 @@
+@import 'variables';
+@import 'sasscript';
+@import'header';
+@import 'footer';
+@import 'mediaqueries';
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+.header{
+    display: flex;
+    flex-direction: column;
+    /*
+    &__titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+        color:rgb(241, 239, 239) ;
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    &__navegacion{
+        display: flex;
+        flex-wrap:nowrap;
+        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+        color:rgb(241, 239, 239) ;
+    }
+    &__header{ aca lo que tendria que hacer es algo para que cuando es hamburguesa no quede al medio
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content: center;
+        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+    }*/
+}
+
+/*.logoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}*/
+
+
+.resaltado:hover{
+    color: rgb(0, 0, 0);
+}
+a:visited{
+    color: rgb(194, 209, 225);
+}
+/*
+.bg-color{
+    background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+}
+
+.font-color a{
+    color:rgb(255, 255, 255);
+}
+*/
+
+/* quiero agregarle color a las letras del nav cuando paso el mouse pero no puedo
+.nav-item:hover{
+    transform: ;
+}
+
+.dropdown-menu{
+    background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+    color: white;
+}
+flex direction, wrap es para que se agrupen cuando achico la pantalla*/
+
+li{
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+}
+/*
+.header__navegacion li>a{
+    color:rgb(241, 239, 239) ;
+    padding: 0,5rem;
+    font-family: 'Roboto Slab', serif
+      
+}   
+*/
+           /**/
+.buscador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    color: rgb(33, 33, 167);
+    border: 5px solid rgb(43, 91, 182);
+}
+
+.container{ /* con col armar diferentes partes, en el caso de querer una medida especial de pantalla por ej la imagen*/
+
+    &__tituloDos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-image: linear-gradient(to top, black, rgb(28, 56, 112));
+    color: rgb(247, 136, 155);
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: xx-large;
+    border: 10px solid rgb(45, 57, 151) 
+    }
+    &__padreBoton{
+    align-self: center;
+    }
+    &__boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to top, black, rgb(28, 56, 112));
+ 
+    color: rgb(235, 157, 170);
+    }
+    &__boton:hover{
+    transform: scale(2);
+    }
+}
+.carousel{
+    width: 40rem;
+}
+
+
+.portada{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    /*align-items: center;*/
+    margin: 30px;
+    background-image: linear-gradient(to top, rgb(121, 131, 199), rgb(217, 217, 196));
+
+    /* probar con flex direction, background image ,height, justify content center, align item center*/
+    &__productos{
+    color: rgb(22, 22, 128);
+    background-color: rgb(241, 239, 239);
+    font-family: 'Roboto Slab', serif
+    }
+}
+
+
+
+/* ancho se dice width y alto height */
+
+/* index ultima section*/
+.destacado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, black, rgb(45, 44, 44));
+    height: 700px;
+    &__titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    color: rgb(178, 152, 67);
+    }
+    &__imagen{
+    margin: none;
+    padding: 1rem;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 25% 10%;
+    }
+    &__boton{
+    width: 100px;
+    height: 30px;
+    margin: none;
+    color: rgb(9, 9, 10);
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(172, 172, 172));
+    font-family: 'Roboto Slab', serif
+    }
+    &__boton:hover{
+    transform: scale(2);
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    color: rgb(22, 22, 128);
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto Slab', serif
+    
+
+
+}
+
+/* Contacto */
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 60px;
+    color: rgb(22, 22, 128);
+    background-color: rgb(241, 239, 239);
+    border-radius: 30px;
+    &__aclaracion{
+    font-family: 'Roboto Slab', serif
+    }
+}
+
+
+.otrosMetodos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 60px;
+    color: rgb(22, 22, 128);
+    background-color: rgb(241, 239, 239);
+    border-radius: 30px;
+    font-family: 'Roboto Slab', serif
+
+}
+.form-select{
+    color: rgb(22, 22, 128);
+}
+/**/
+
+/* Preg frecuentes*/
+
+.main__pregFrec{
+    color: rgb(22, 22, 128);
+    background-color: rgb(241, 239, 239);
+    font-family: 'Roboto Slab', serif
+}
+
+/**/
+
+/*Sobre Nosotros*/
+
+.sectionSobreNos{
+    color: rgb(22, 22, 128);
+    background-color: rgb(241, 239, 239);
+    font-family: 'Roboto Slab', serif
+}
+
+.sectionSobreNos__historia{
+   font-family:Arial, Helvetica, sans-serif
+
+}
+
+/* Productos*/
+.flex{
+    display: flex;
+    gap: 15px;
+}
+/*MAP*/
+$productos: (
+    key1: procesadora, 
+    key2: licuadora, 
+    key3: waflera); 
+    /*clave valor*/
+/*Each*/
+@each $key, $producto in $productos{
+    .#{$key}-card{
+        background-image: url(../recursos/Productos/#{$producto}.jpg);
+        background-size: cover;
+        padding: 10px;
+        width: 30rem;
+        height: 20rem;
+        background-color: $color-primary;
+    }
+}
+$tamanos:(h1: 3rem, h2: 1.5rem, h3: 0.25rem);
+
+@each $titulo, $tamano  in $tamanos {
+    #{titulo}{
+        font-size: #{size};
+        color: $color-primary;
+    }
+}
+@media (min-width: 540px){
+    @each $key, $producto in $productos{
+        .#{$key}-card{
+            background-image: url(../recursos/Productos/#{$producto}.jpg);
+            background-size: cover;
+            width: 7rem;
+            height: 7rem;
+            background-color: $color-primary;
+        }
+    }
+}
+
+.mainProductos__titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(22, 22, 128);
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(203, 203, 210));
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.grid__container{
+    display: grid;
+    border: none;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+
+}
+
+.grid__item{
+    display: flex;
+    flex-direction:inherit;
+    gap: 25px;
+    border: 10px solid cornflowerblue;
+    background-color: rgb(249, 249, 249);
+}
+.grid__item:hover{
+    transform: scale(1,2);
+}
+
+.grid__uno{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/waflera.png")
+     
+}
+.grid__dos{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/tostadora.png")
+    
+}
+.grid__tres{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/sanguchera.png")
+}
+.grid__cuatro{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:url("../recursos/vaporera.png")
+}
+.grid__cinco{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/robot.png")
+}
+.grid__seis{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/pasta.png")
+}
+.grid__siete{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/freidora.png")
+}
+.grid__ocho{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/sopera.png")
+}
+.grid__nueve{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/panera.png")
+}
+.grid__diez{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/batidora.png")
+}
+.grid__once{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/multiprocesadora.png")
+}
+.grid__doce{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/procesadora.png")
+}
+.grid__trece{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/licuadora1.png")
+}
+.grid__catorce{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/pava.png")
+}
+.grid__quince{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/cafetera.png")
+}
+.grid__diesciseis{
+    grid-row: 1fr;
+    grid-column: 1fr;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../recursos/termo.png")
+    
+}
+
+
+.mainProductos__foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 20px solid cornflowerblue;
+    border-style: outset;
+}
+    
+
+
+.mainProductos__boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border: 10px solid rgb(43, 91, 182);
+    border-style: outset;
+}
+
+/*media querie --min with: minimo
+max with: maximo*/
+
+@media (min-width:541px) and (max-width:720px) {
+   
+    .header__navegacion{
+        display: flex;
+        flex-wrap:wrap;
+       
+    
+        
+    }
+}
+@media (min-width:320px) and (max-width:540px) {
+    
+    .header__navegacion{
+        display: flex;
+        flex-wrap:wrap;
+       
+    
+        
+    }
+}
+
+
+.footer{
+    display: flex;
+}
+
+
+/* display none es para esconder algo, por ej para pasar de compu a celu escondes el titulo grande y pones uno mas chiquito*/
+/*position:fixed
+width:50
+bottom:0
+right:0 
+esto es para dejar algo fijo y que se mueva el resto , por ej boton de wsp*/
+
+/*border radius es para bordes redondeados
+
+
+me falta tambien armar las etiquetas para los productos*/

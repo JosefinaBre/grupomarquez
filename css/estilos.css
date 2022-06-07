@@ -1,8 +1,89 @@
+@charset "UTF-8";
+/*Colores
 
-header{
+$color-body:
+$color-secundary:
+$color-letra-navegacion:
+$color-boton:
+
+/* tipos de letras
+$font-principal:
+$font-body:
+
+/*Tamaños
+$ancho:
+$alto:
+*/
+header {
+  /*aca pasa algo que se me rompe*/ }
+  header__titulo {
     display: flex;
     flex-direction: column;
-}
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #132b81, #504edb);
+    color: #f1efef;
+    font-family: 'Roboto Slab', serif; }
+  header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  header__navegacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(to top, #132b81, #504edb);
+    color: #f1efef; }
+  header__header {
+    /* aca lo que tendria que hacer es algo para que cuando es hamburguesa no quede al medio*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: linear-gradient(to top, #132b81, #504edb); }
+
+@media (min-width: 541px) and (max-width: 720px) {
+  .header__navegacion {
+    display: flex;
+    flex-wrap: wrap; } }
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .header__navegacion {
+    display: flex;
+    flex-wrap: wrap; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  /*
+    &__titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+        color:rgb(241, 239, 239) ;
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    &__navegacion{
+        display: flex;
+        flex-wrap:nowrap;
+        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+        color:rgb(241, 239, 239) ;
+    }
+    &__header{ aca lo que tendria que hacer es algo para que cuando es hamburguesa no quede al medio
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content: center;
+        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
+    }*/ }
+
 /*.logoPrincipal{
     display: flex;
     flex-direction: column;
@@ -10,27 +91,13 @@ header{
     justify-content: center;
     
 }*/
+.resaltado:hover {
+  color: black; }
 
-.header__titulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
-    color:rgb(241, 239, 239) ;
-    font-family: 'Roboto Slab', serif;
-}
+a:visited {
+  color: #c2d1e1; }
 
-
-.header__navegacion{
-    display: flex;
-    flex-wrap:nowrap;
-    background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
-    color:rgb(241, 239, 239) ;
-
-    
-}
-
+/*
 .bg-color{
     background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
 }
@@ -38,10 +105,7 @@ header{
 .font-color a{
     color:rgb(255, 255, 255);
 }
-
-a:visited{
-    color: rgb(194, 209, 225);
-}
+*/
 /* quiero agregarle color a las letras del nav cuando paso el mouse pero no puedo
 .nav-item:hover{
     transform: ;
@@ -51,14 +115,13 @@ a:visited{
     background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
     color: white;
 }
-/* flex direction, wrap es para que se agrupen cuando achico la pantalla*/
+flex direction, wrap es para que se agrupen cuando achico la pantalla*/
+li {
+  padding: 1rem; }
 
-li{
-    padding: 1rem;
-}
-a{
-    text-decoration: none;
-}
+a {
+  text-decoration: none; }
+
 /*
 .header__navegacion li>a{
     color:rgb(241, 239, 239) ;
@@ -67,404 +130,401 @@ a{
       
 }   
 */
-           /**/
-.buscador{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+/**/
+.buscador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
-.btn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    color: rgb(33, 33, 167);
-    border: 5px solid rgb(43, 91, 182);
-}
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  color: #2121a7;
+  border: 5px solid #2b5bb6; }
 
-.container{
-    width: 40rem;
-}
-.container__tituloDos{
+.container {
+  /* con col armar diferentes partes, en el caso de querer una medida especial de pantalla por ej la imagen*/ }
+  .container__tituloDos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background-image: linear-gradient(to top, black, rgb(28, 56, 112));
-    color: rgb(247, 136, 155);
-    font-family: 'Courier New', Courier, monospace ;
+    background-image: linear-gradient(to top, black, #1c3870);
+    color: #f7889b;
+    font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
-
-    border: 10px solid rgb(45, 57, 151)  
-}
-.container__padreBoton{
-    align-self: center;
- 
- }
- 
- .container__boton{
+    border: 10px solid #2d3997; }
+  .container__padreBoton {
+    align-self: center; }
+  .container__boton {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(to top, black, rgb(28, 56, 112));
- 
-    color: rgb(235, 157, 170);
- }
- .container__boton:hover{
-    transform: scale(2);
- }
-.portada{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    /*align-items: center;*/
-    margin: 30px;
-    background-image: linear-gradient(to top, rgb(121, 131, 199), rgb(217, 217, 196));
+    background-image: linear-gradient(to top, black, #1c3870);
+    color: #eb9daa; }
+  .container__boton:hover {
+    transform: scale(2); }
 
-    /* probar con flex direction, background image ,height, justify content center, align item center*/
+.carousel {
+  width: 40rem; }
 
-}
+.portada {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  /*align-items: center;*/
+  margin: 30px;
+  background-image: linear-gradient(to top, #7983c7, #d9d9c4);
+  /* probar con flex direction, background image ,height, justify content center, align item center*/ }
+  .portada__productos {
+    color: #161680;
+    background-color: #f1efef;
+    font-family: 'Roboto Slab', serif; }
 
 /* ancho se dice width y alto height */
-
-
-.portada__productos{
-    color: rgb(22, 22, 128);
-    background-color: rgb(241, 239, 239);
-    font-family: 'Roboto Slab', serif
-
-}
-
 /* index ultima section*/
-.destacado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to top, black, rgb(45, 44, 44));
-    height: 700px;
-}
-.destacado__titulo{
+.destacado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, black, #2d2c2c);
+  height: 700px; }
+  .destacado__titulo {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     padding: 0px;
-    color: rgb(178, 152, 67);
-}
-
-.destacado__imagen{
+    color: #b29843; }
+  .destacado__imagen {
     margin: none;
     padding: 1rem;
     width: 60vw;
     height: 50vh;
-    border-radius: 25% 10%;
-}
-.destacado__boton{
+    border-radius: 25% 10%; }
+  .destacado__boton {
     width: 100px;
     height: 30px;
     margin: none;
-    color: rgb(9, 9, 10);
-    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(172, 172, 172));
-    font-family: 'Roboto Slab', serif
-    
-}
-.destacado__boton:hover{
-    transform: scale(2);
-}
+    color: #09090a;
+    background-image: linear-gradient(to top, white, #acacac);
+    font-family: 'Roboto Slab', serif; }
+  .destacado__boton:hover {
+    transform: scale(2); }
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 100px;
-    color: rgb(22, 22, 128);
-    background-color: rgb(255, 255, 255);
-    font-family: 'Roboto Slab', serif
-    
-
-
-}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  color: #161680;
+  background-color: white;
+  font-family: 'Roboto Slab', serif; }
 
 /* Contacto */
-.contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    margin: 60px;
-    color: rgb(22, 22, 128);
-    background-color: rgb(241, 239, 239);
-    border-radius: 30px;
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 60px;
+  color: #161680;
+  background-color: #f1efef;
+  border-radius: 30px; }
+  .contacto__aclaracion {
+    font-family: 'Roboto Slab', serif; }
 
-}
-.contacto__aclaracion{
+.otrosMetodos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 60px;
+  color: #161680;
+  background-color: #f1efef;
+  border-radius: 30px;
+  font-family: 'Roboto Slab', serif; }
 
-    font-family: 'Roboto Slab', serif
-}
-.otrosMetodos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    margin: 60px;
-    color: rgb(22, 22, 128);
-    background-color: rgb(241, 239, 239);
-    border-radius: 30px;
-    font-family: 'Roboto Slab', serif
+.form-select {
+  color: #161680; }
 
-}
-.form-select{
-    color: rgb(22, 22, 128);
-}
 /**/
-
 /* Preg frecuentes*/
-
-.main__pregFrec{
-    color: rgb(22, 22, 128);
-    background-color: rgb(241, 239, 239);
-    font-family: 'Roboto Slab', serif
-}
+.main__pregFrec {
+  color: #161680;
+  background-color: #f1efef;
+  font-family: 'Roboto Slab', serif; }
 
 /**/
-
 /*Sobre Nosotros*/
+.sectionSobreNos {
+  color: #161680;
+  background-color: #f1efef;
+  font-family: 'Roboto Slab', serif; }
 
-.sectionSobreNos{
-    color: rgb(22, 22, 128);
-    background-color: rgb(241, 239, 239);
-    font-family: 'Roboto Slab', serif
-}
-
-.sectionSobreNos__historia{
-   font-family:Arial, Helvetica, sans-serif
-
-}
+.sectionSobreNos__historia {
+  font-family: Arial, Helvetica, sans-serif; }
 
 /* Productos*/
+.flex {
+  display: flex;
+  gap: 15px; }
 
-.mainProductos__titulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: rgb(22, 22, 128);
-    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(203, 203, 210));
-    font-family: 'Roboto Slab', serif;
+/*MAP*/
+/*clave valor*/
+/*Each*/
+.key1-card {
+  background-image: url(../recursos/Productos/procesadora.jpg);
+  background-size: cover;
+  padding: 10px;
+  width: 30rem;
+  height: 20rem;
+  background-color: blue; }
 
-}
+.key2-card {
+  background-image: url(../recursos/Productos/licuadora.jpg);
+  background-size: cover;
+  padding: 10px;
+  width: 30rem;
+  height: 20rem;
+  background-color: blue; }
 
-.grid__container{
-    display: grid;
-    border: none;
-    grid-template-rows: 200px 200px 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 15px;
+.key3-card {
+  background-image: url(../recursos/Productos/waflera.jpg);
+  background-size: cover;
+  padding: 10px;
+  width: 30rem;
+  height: 20rem;
+  background-color: blue; }
 
-}
+titulo {
+  font-size: size;
+  color: blue; }
 
-.grid__item{
-    display: flex;
-    flex-direction:inherit;
-    gap: 25px;
-    border: 10px solid cornflowerblue;
-    background-color: rgb(249, 249, 249);
-}
-.grid__item:hover{
-    transform: scale(1,2);
-}
+titulo {
+  font-size: size;
+  color: blue; }
 
-.grid__uno{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/waflera.png")
-     
-}
-.grid__dos{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/tostadora.png")
-    
-}
-.grid__tres{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/sanguchera.png")
-}
-.grid__cuatro{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image:url("../recursos/vaporera.png")
-}
-.grid__cinco{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/robot.png")
-}
-.grid__seis{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/pasta.png")
-}
-.grid__siete{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/freidora.png")
-}
-.grid__ocho{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/sopera.png")
-}
-.grid__nueve{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/panera.png")
-}
-.grid__diez{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/batidora.png")
-}
-.grid__once{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/multiprocesadora.png")
-}
-.grid__doce{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/procesadora.png")
-}
-.grid__trece{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/licuadora1.png")
-}
-.grid__catorce{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/pava.png")
-}
-.grid__quince{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/cafetera.png")
-}
-.grid__diesciseis{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/termo.png")
-    
-}
+titulo {
+  font-size: size;
+  color: blue; }
 
+@media (min-width: 540px) {
+  .key1-card {
+    background-image: url(../recursos/Productos/procesadora.jpg);
+    background-size: cover;
+    width: 7rem;
+    height: 7rem;
+    background-color: blue; }
+  .key2-card {
+    background-image: url(../recursos/Productos/licuadora.jpg);
+    background-size: cover;
+    width: 7rem;
+    height: 7rem;
+    background-color: blue; }
+  .key3-card {
+    background-image: url(../recursos/Productos/waflera.jpg);
+    background-size: cover;
+    width: 7rem;
+    height: 7rem;
+    background-color: blue; } }
 
-.mainProductos__foto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 20px solid cornflowerblue;
-    border-style: outset;
-}
-    
+.mainProductos__titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #161680;
+  background-image: linear-gradient(to top, white, #cbcbd2);
+  font-family: 'Roboto Slab', serif; }
 
+.grid__container {
+  display: grid;
+  border: none;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px; }
 
-.mainProductos__boton{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    border: 10px solid rgb(43, 91, 182);
-    border-style: outset;
-}
+.grid__item {
+  display: flex;
+  flex-direction: inherit;
+  gap: 25px;
+  border: 10px solid cornflowerblue;
+  background-color: #f9f9f9; }
+
+.grid__item:hover {
+  transform: scale(1, 2); }
+
+.grid__uno {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/waflera.png"); }
+
+.grid__dos {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/tostadora.png"); }
+
+.grid__tres {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/sanguchera.png"); }
+
+.grid__cuatro {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/vaporera.png"); }
+
+.grid__cinco {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/robot.png"); }
+
+.grid__seis {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/pasta.png"); }
+
+.grid__siete {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/freidora.png"); }
+
+.grid__ocho {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/sopera.png"); }
+
+.grid__nueve {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/panera.png"); }
+
+.grid__diez {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/batidora.png"); }
+
+.grid__once {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/multiprocesadora.png"); }
+
+.grid__doce {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/procesadora.png"); }
+
+.grid__trece {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/licuadora1.png"); }
+
+.grid__catorce {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/pava.png"); }
+
+.grid__quince {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/cafetera.png"); }
+
+.grid__diesciseis {
+  grid-row: 1fr;
+  grid-column: 1fr;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../recursos/termo.png"); }
+
+.mainProductos__foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 20px solid cornflowerblue;
+  border-style: outset; }
+
+.mainProductos__boton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border: 10px solid #2b5bb6;
+  border-style: outset; }
 
 /*media querie --min with: minimo
 max with: maximo*/
+@media (min-width: 541px) and (max-width: 720px) {
+  .header__navegacion {
+    display: flex;
+    flex-wrap: wrap; } }
 
-@media (min-width:541px) and (max-width:720px) {
-   
-    .header__navegacion{
-        display: flex;
-        flex-wrap:wrap;
-       
-    
-        
-    }
-}
-@media (min-width:320px) and (max-width:540px) {
-    
-    .header__navegacion{
-        display: flex;
-        flex-wrap:wrap;
-       
-    
-        
-    }
-}
+@media (min-width: 320px) and (max-width: 540px) {
+  .header__navegacion {
+    display: flex;
+    flex-wrap: wrap; } }
 
-
-
-
+.footer {
+  display: flex; }
 
 /* display none es para esconder algo, por ej para pasar de compu a celu escondes el titulo grande y pones uno mas chiquito*/
 /*position:fixed
@@ -472,7 +532,6 @@ width:50
 bottom:0
 right:0 
 esto es para dejar algo fijo y que se mueva el resto , por ej boton de wsp*/
-
 /*border radius es para bordes redondeados
 
 
