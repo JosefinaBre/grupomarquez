@@ -14,52 +14,43 @@ $font-body:
 $ancho:
 $alto:
 */
-header {
+.header {
   /*aca pasa algo que se me rompe*/ }
-  header__titulo {
+  .header__titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to top, #132b81, #504edb);
+    background-image: linear-gradient(to top, #0f0b3c, #1f4083);
     color: #f1efef;
-    font-family: 'Roboto Slab', serif; }
-  header__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  header__navegacion {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-image: linear-gradient(to top, #132b81, #504edb);
-    color: #f1efef; }
-  header__header {
-    /* aca lo que tendria que hacer es algo para que cuando es hamburguesa no quede al medio*/
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    background-image: linear-gradient(to top, #132b81, #504edb); }
+    font-family: "Oswald", sans-serif;
+    font-size: 5rem;
+    margin: none;
+    padding: 2rem; }
 
 @media (min-width: 541px) and (max-width: 720px) {
-  .header__navegacion {
+  .header__titulo {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+    font-size: 2rem; }
+  .container__boton {
+    font-size: 2px; } }
 
 @media (min-width: 320px) and (max-width: 540px) {
-  .header__navegacion {
+  .header__titulo {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .container__boton {
+    font-size: 2px; } }
 
 * {
   margin: 0;
   padding: 0; }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  /*
+body {
+  background-color: #d8d6d6; }
+
+/*
     &__titulo{
         display: flex;
         flex-direction: column;
@@ -82,21 +73,22 @@ header {
         align-items:flex-end;
         justify-content: center;
         background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
-    }*/ }
-
+    }*/
 /*.logoPrincipal{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
-}*/
-.resaltado:hover {
-  color: black; }
+}
 
-a:visited {
-  color: #c2d1e1; }
 
+.resaltado:hover{
+    color: rgb(0, 0, 0);
+}
+a:visited{
+    color: rgb(194, 209, 225);
+}
 /*
 .bg-color{
     background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
@@ -115,13 +107,14 @@ a:visited {
     background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
     color: white;
 }
-flex direction, wrap es para que se agrupen cuando achico la pantalla*/
-li {
-  padding: 1rem; }
+flex direction, wrap es para que se agrupen cuando achico la pantalla
 
-a {
-  text-decoration: none; }
-
+li{
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+}
 /*
 .header__navegacion li>a{
     color:rgb(241, 239, 239) ;
@@ -131,6 +124,13 @@ a {
 }   
 */
 /**/
+.navbar-color {
+  background-image: linear-gradient(to top, #0f0b3c, #1f4083);
+  color: #ceced5; }
+
+.fuente {
+  color: #d3d9df; }
+
 .buscador {
   display: flex;
   flex-direction: column;
@@ -146,19 +146,32 @@ a {
   color: #2121a7;
   border: 5px solid #2b5bb6; }
 
+.imgRedonda {
+  width: 100px;
+  height: 100px;
+  border-radius: 150px;
+  border-style: outset; }
+
+.borde:hover {
+  transform: scale(1.2, 1.2);
+  border-style: outset; }
+
 .container {
-  /* con col armar diferentes partes, en el caso de querer una medida especial de pantalla por ej la imagen*/ }
+  /* con col armar diferentes partes, en el caso de querer una medida especial de pantalla por ej la imagen*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .container__tituloDos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 2rem;
-    background-image: linear-gradient(to top, black, #1c3870);
-    color: #f7889b;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: xx-large;
-    border: 10px solid #2d3997; }
+    justify-content: center;
+    background-image: linear-gradient(to top, #0f0b3c, #1f4083);
+    color: #f1efef;
+    font-family: "Oswald", sans-serif;
+    font-size: 5rem;
+    margin: none;
+    padding: 2rem; }
   .container__padreBoton {
     align-self: center; }
   .container__boton {
@@ -166,12 +179,10 @@ a {
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(to top, black, #1c3870);
-    color: #eb9daa; }
+    font-family: "Oswald", sans-serif;
+    color: #e1e1f2; }
   .container__boton:hover {
     transform: scale(2); }
-
-.carousel {
-  width: 40rem; }
 
 .portada {
   display: flex;
@@ -180,12 +191,13 @@ a {
   justify-content: center;
   flex-direction: column;
   /*align-items: center;*/
-  margin: 30px;
+  padding: 1rem;
+  margin: 2rem;
   background-image: linear-gradient(to top, #7983c7, #d9d9c4);
   /* probar con flex direction, background image ,height, justify content center, align item center*/ }
   .portada__productos {
     color: #161680;
-    background-color: #f1efef;
+    font-size: xx-large;
     font-family: 'Roboto Slab', serif; }
 
 /* ancho se dice width y alto height */
@@ -269,11 +281,13 @@ a {
 /**/
 /*Sobre Nosotros*/
 .sectionSobreNos {
+  margin: 2rem;
   color: #161680;
   background-color: #f1efef;
   font-family: 'Roboto Slab', serif; }
 
 .sectionSobreNos__historia {
+  margin: 2rem;
   font-family: Arial, Helvetica, sans-serif; }
 
 /* Productos*/
@@ -290,7 +304,7 @@ a {
   padding: 10px;
   width: 30rem;
   height: 20rem;
-  background-color: blue; }
+  background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
 
 .key2-card {
   background-image: url(../recursos/Productos/licuadora.jpg);
@@ -298,7 +312,7 @@ a {
   padding: 10px;
   width: 30rem;
   height: 20rem;
-  background-color: blue; }
+  background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
 
 .key3-card {
   background-image: url(../recursos/Productos/waflera.jpg);
@@ -306,19 +320,19 @@ a {
   padding: 10px;
   width: 30rem;
   height: 20rem;
-  background-color: blue; }
+  background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
 
 titulo {
   font-size: size;
-  color: blue; }
+  color: linear-gradient(to top, #0f0b3c, #1f4083); }
 
 titulo {
   font-size: size;
-  color: blue; }
+  color: linear-gradient(to top, #0f0b3c, #1f4083); }
 
 titulo {
   font-size: size;
-  color: blue; }
+  color: linear-gradient(to top, #0f0b3c, #1f4083); }
 
 @media (min-width: 540px) {
   .key1-card {
@@ -326,19 +340,19 @@ titulo {
     background-size: cover;
     width: 7rem;
     height: 7rem;
-    background-color: blue; }
+    background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
   .key2-card {
     background-image: url(../recursos/Productos/licuadora.jpg);
     background-size: cover;
     width: 7rem;
     height: 7rem;
-    background-color: blue; }
+    background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
   .key3-card {
     background-image: url(../recursos/Productos/waflera.jpg);
     background-size: cover;
     width: 7rem;
     height: 7rem;
-    background-color: blue; } }
+    background-color: linear-gradient(to top, #0f0b3c, #1f4083); } }
 
 .mainProductos__titulo {
   display: flex;
@@ -513,16 +527,6 @@ titulo {
 
 /*media querie --min with: minimo
 max with: maximo*/
-@media (min-width: 541px) and (max-width: 720px) {
-  .header__navegacion {
-    display: flex;
-    flex-wrap: wrap; } }
-
-@media (min-width: 320px) and (max-width: 540px) {
-  .header__navegacion {
-    display: flex;
-    flex-wrap: wrap; } }
-
 .footer {
   display: flex; }
 

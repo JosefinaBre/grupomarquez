@@ -1,20 +1,23 @@
 @media (min-width:541px) and (max-width:720px) {
    
-    .header__navegacion{
+    .header__titulo{
         display: flex;
         flex-wrap:wrap;
-       
-    
-        
+        font-size: 2rem;
+      
+    }
+    .container__boton{
+        font-size: 2px;
     }
 }
 @media (min-width:320px) and (max-width:540px) {
     
-    .header__navegacion{
+    .header__titulo{
         display: flex;
         flex-wrap:wrap;
-       
-    
         
+    }
+    .container__boton{
+        font-size: 2px;
     }
 }

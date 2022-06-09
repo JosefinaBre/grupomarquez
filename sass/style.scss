@@ -8,9 +8,9 @@
     margin: 0;
     padding: 0;
 } 
-.header{
-    display: flex;
-    flex-direction: column;
+body{
+    background-color: rgb(216, 214, 214);
+}
     /*
     &__titulo{
         display: flex;
@@ -35,7 +35,6 @@
         justify-content: center;
         background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
     }*/
-}
 
 /*.logoPrincipal{
     display: flex;
@@ -43,7 +42,7 @@
     align-items: center;
     justify-content: center;
     
-}*/
+}
 
 
 .resaltado:hover{
@@ -71,7 +70,7 @@ a:visited{
     background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
     color: white;
 }
-flex direction, wrap es para que se agrupen cuando achico la pantalla*/
+flex direction, wrap es para que se agrupen cuando achico la pantalla
 
 li{
     padding: 1rem;
@@ -88,6 +87,16 @@ a{
 }   
 */
            /**/
+
+.navbar-color{
+    background-image: $color-primary;
+    color: rgb(206, 206, 213);
+}
+
+.fuente{
+    color: rgb(211, 217, 223);
+}
+
 .buscador{
     display: flex;
     flex-direction: column;
@@ -105,20 +114,37 @@ a{
     border: 5px solid rgb(43, 91, 182);
 }
 
-.container{ /* con col armar diferentes partes, en el caso de querer una medida especial de pantalla por ej la imagen*/
+.imgRedonda {
+    width: 100px;
+    height:100px;
+    border-radius:150px;
+    border-style: outset;
+    
+}
+.borde:hover{
+    transform: scale(1.2,1.2);
+    border-style: outset;
+}
 
+.container{ /* con col armar diferentes partes, en el caso de querer una medida especial de pantalla por ej la imagen*/
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    
     &__tituloDos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    background-image: linear-gradient(to top, black, rgb(28, 56, 112));
-    color: rgb(247, 136, 155);
-    font-family: 'Courier New', Courier, monospace ;
-    font-size: xx-large;
-    border: 10px solid rgb(45, 57, 151) 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: $color-primary; 
+        color :rgb(241, 239, 239) ;
+        font-family: $font-principal;
+        font-size: 5rem;
+        margin: none;
+        padding: 2rem;
     }
+    
+
     &__padreBoton{
     align-self: center;
     }
@@ -127,16 +153,14 @@ a{
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(to top, black, rgb(28, 56, 112));
- 
-    color: rgb(235, 157, 170);
+    font-family: $font-principal ;
+    color: rgb(225, 225, 242);
     }
     &__boton:hover{
     transform: scale(2);
     }
 }
-.carousel{
-    width: 40rem;
-}
+
 
 
 .portada{
@@ -146,15 +170,18 @@ a{
     justify-content: center;
     flex-direction: column;
     /*align-items: center;*/
-    margin: 30px;
+    padding: 1rem;
+    margin: 2rem;
     background-image: linear-gradient(to top, rgb(121, 131, 199), rgb(217, 217, 196));
 
     /* probar con flex direction, background image ,height, justify content center, align item center*/
     &__productos{
-    color: rgb(22, 22, 128);
-    background-color: rgb(241, 239, 239);
-    font-family: 'Roboto Slab', serif
+        color: rgb(22, 22, 128);
+        font-size: xx-large;
+        font-family: 'Roboto Slab', serif
+    
     }
+    
 }
 
 
@@ -259,13 +286,17 @@ a{
 /*Sobre Nosotros*/
 
 .sectionSobreNos{
+    margin: 2rem;
     color: rgb(22, 22, 128);
     background-color: rgb(241, 239, 239);
-    font-family: 'Roboto Slab', serif
+    font-family: 'Roboto Slab', serif 
+    
 }
 
 .sectionSobreNos__historia{
-   font-family:Arial, Helvetica, sans-serif
+    margin: 2rem ;
+    font-family:Arial, Helvetica, sans-serif
+   
 
 }
 
@@ -499,26 +530,6 @@ $tamanos:(h1: 3rem, h2: 1.5rem, h3: 0.25rem);
 /*media querie --min with: minimo
 max with: maximo*/
 
-@media (min-width:541px) and (max-width:720px) {
-   
-    .header__navegacion{
-        display: flex;
-        flex-wrap:wrap;
-       
-    
-        
-    }
-}
-@media (min-width:320px) and (max-width:540px) {
-    
-    .header__navegacion{
-        display: flex;
-        flex-wrap:wrap;
-       
-    
-        
-    }
-}
 
 
 .footer{
