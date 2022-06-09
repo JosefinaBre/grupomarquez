@@ -94,7 +94,7 @@ a{
 }
 
 .fuente{
-    color: rgb(211, 217, 223);
+    color: rgb(217, 225, 234);
 }
 
 .buscador{
@@ -137,7 +137,8 @@ a{
         align-items: center;
         justify-content: center;
         background-image: $color-primary; 
-        color :rgb(241, 239, 239) ;
+
+        color :rgb(180, 198, 216) ;
         font-family: $font-principal;
         font-size: 5rem;
         margin: none;
@@ -352,6 +353,7 @@ $tamanos:(h1: 3rem, h2: 1.5rem, h3: 0.25rem);
     font-family: 'Roboto Slab', serif;
 
 }
+/*
 
 .grid__container{
     display: grid;
