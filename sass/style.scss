@@ -9,7 +9,7 @@
     padding: 0;
 } 
 body{
-    background-color: rgb(216, 214, 214);
+    background-color: rgb(226, 225, 230);
 }
     /*
     &__titulo{
@@ -190,40 +190,7 @@ a{
 /* ancho se dice width y alto height */
 
 /* index ultima section*/
-.destacado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to top, black, rgb(45, 44, 44));
-    height: 700px;
-    &__titulo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0px;
-    color: rgb(178, 152, 67);
-    }
-    &__imagen{
-    margin: none;
-    padding: 1rem;
-    width: 60vw;
-    height: 50vh;
-    border-radius: 25% 10%;
-    }
-    &__boton{
-    width: 100px;
-    height: 30px;
-    margin: none;
-    color: rgb(9, 9, 10);
-    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(172, 172, 172));
-    font-family: 'Roboto Slab', serif
-    }
-    &__boton:hover{
-    transform: scale(2);
-    }
-}
+
 
 .footer{
     display: flex;
@@ -252,6 +219,7 @@ a{
     border-radius: 30px;
     &__aclaracion{
     font-family: 'Roboto Slab', serif
+
     }
 }
 
@@ -310,7 +278,10 @@ a{
 $productos: (
     key1: procesadora, 
     key2: licuadora, 
-    key3: waflera); 
+    key3: waflera,
+    key4:tostadora
+    
+    ); 
     /*clave valor*/
 /*Each*/
 @each $key, $producto in $productos{
@@ -536,6 +507,16 @@ max with: maximo*/
 
 .footer{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:  rgb(241, 239, 239); 
+    color :$color-primary;
+    font-family: $font-principal;
+    font-size: 13px;
+    
+    margin: 2rem;
+    padding: 1rem;
 }
 
 

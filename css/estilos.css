@@ -28,27 +28,66 @@ $alto:
     margin: none;
     padding: 2rem; }
 
-@media (min-width: 541px) and (max-width: 720px) {
+@media (min-width: 541px) and (max-width: 800px) {
   .header__titulo {
     display: flex;
     flex-wrap: wrap;
     font-size: 2rem; }
   .container__boton {
-    font-size: 2px; } }
+    font-size: 2px; }
+  /*.header__titulo{
+        display: flex;
+        flex-wrap:wrap;
+    
+        font-size: 3rem;
+        
+    }este tampoco me anda*/ }
 
 @media (min-width: 320px) and (max-width: 540px) {
   .header__titulo {
     display: flex;
     flex-wrap: wrap; }
   .container__boton {
-    font-size: 2px; } }
+    font-size: 1rem; } }
+
+@media (min-width: 400px) and (max-width: 800px) {
+  .header__titulo {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem; }
+  .container__boton {
+    font-size: 1rem; }
+  /*.footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 5px;
+    
+       
+    }no se como achicar la letra en celular */
+  .potada__productos {
+    font-size: 5px; }
+  /*Tengo que hacer responsive productos
+
+    
+
+    .imgRedonda {
+        display: flex;
+        flex-wrap:wrap;
+        width: 50px;
+        height: 50px;
+        border-radius:50px;
+        border-style: outset;
+        
+    }*/ }
 
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  background-color: #d8d6d6; }
+  background-color: #e2e1e6; }
 
 /*
     &__titulo{
@@ -202,36 +241,6 @@ a{
 
 /* ancho se dice width y alto height */
 /* index ultima section*/
-.destacado {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(to top, black, #2d2c2c);
-  height: 700px; }
-  .destacado__titulo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0px;
-    color: #b29843; }
-  .destacado__imagen {
-    margin: none;
-    padding: 1rem;
-    width: 60vw;
-    height: 50vh;
-    border-radius: 25% 10%; }
-  .destacado__boton {
-    width: 100px;
-    height: 30px;
-    margin: none;
-    color: #09090a;
-    background-image: linear-gradient(to top, white, #acacac);
-    font-family: 'Roboto Slab', serif; }
-  .destacado__boton:hover {
-    transform: scale(2); }
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -322,6 +331,14 @@ a{
   height: 20rem;
   background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
 
+.key4-card {
+  background-image: url(../recursos/Productos/tostadora.jpg);
+  background-size: cover;
+  padding: 10px;
+  width: 30rem;
+  height: 20rem;
+  background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
+
 titulo {
   font-size: size;
   color: linear-gradient(to top, #0f0b3c, #1f4083); }
@@ -349,6 +366,12 @@ titulo {
     background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
   .key3-card {
     background-image: url(../recursos/Productos/waflera.jpg);
+    background-size: cover;
+    width: 7rem;
+    height: 7rem;
+    background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
+  .key4-card {
+    background-image: url(../recursos/Productos/tostadora.jpg);
     background-size: cover;
     width: 7rem;
     height: 7rem;
@@ -542,7 +565,16 @@ titulo {
 /*media querie --min with: minimo
 max with: maximo*/
 .footer {
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: #f1efef;
+  color: linear-gradient(to top, #0f0b3c, #1f4083);
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  margin: 2rem;
+  padding: 1rem; }
 
 /* display none es para esconder algo, por ej para pasar de compu a celu escondes el titulo grande y pones uno mas chiquito*/
 /*position:fixed

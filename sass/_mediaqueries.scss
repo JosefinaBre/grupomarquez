@@ -1,4 +1,4 @@
-@media (min-width:541px) and (max-width:720px) {
+@media (min-width:541px) and (max-width:800px) {
    
     .header__titulo{
         display: flex;
@@ -9,6 +9,13 @@
     .container__boton{
         font-size: 2px;
     }
+    /*.header__titulo{
+        display: flex;
+        flex-wrap:wrap;
+    
+        font-size: 3rem;
+        
+    }este tampoco me anda*/
 }
 @media (min-width:320px) and (max-width:540px) {
     
@@ -18,6 +25,47 @@
         
     }
     .container__boton{
-        font-size: 2px;
+        font-size: 1rem;
     }
+}
+@media (min-width:400px) and (max-width:800px) {
+    
+    .header__titulo{
+        display: flex;
+        flex-wrap:wrap;
+    
+        font-size: 3rem;
+        
+    }
+    .container__boton{
+        font-size: 1rem;
+
+    }
+    /*.footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 5px;
+    
+       
+    }no se como achicar la letra en celular */
+
+    .potada__productos{
+        font-size: 5px; 
+    }
+        
+        /*Tengo que hacer responsive productos
+
+    
+
+    .imgRedonda {
+        display: flex;
+        flex-wrap:wrap;
+        width: 50px;
+        height: 50px;
+        border-radius:50px;
+        border-style: outset;
+        
+    }*/
 }
