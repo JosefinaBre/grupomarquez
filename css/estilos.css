@@ -28,6 +28,9 @@ $alto:
     margin: none;
     padding: 2rem; }
 
+/*.resaltado:hover{
+     color: rgb(87, 87, 233);
+ }como hago aca par ponerle un hover a los botones de nav?*/
 @media (min-width: 541px) and (max-width: 800px) {
   .header__titulo {
     display: flex;
