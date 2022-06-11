@@ -57,7 +57,7 @@ $alto:
   .header__titulo {
     display: flex;
     flex-wrap: wrap;
-    font-size: 3rem; }
+    font-size: 2rem; }
   .container__boton {
     font-size: 1rem; }
   /*.footer{
@@ -71,6 +71,8 @@ $alto:
     }no se como achicar la letra en celular */
   .potada__productos {
     font-size: 5px; }
+  .carousel {
+    height: 100px; }
   /*Tengo que hacer responsive productos
 
     
