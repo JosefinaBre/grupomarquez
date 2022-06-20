@@ -94,80 +94,6 @@ $alto:
 body {
   background-color: #e2e1e6; }
 
-/*
-    &__titulo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
-        color:rgb(241, 239, 239) ;
-        font-family: 'Roboto Slab', serif;
-    }
-    
-    &__navegacion{
-        display: flex;
-        flex-wrap:nowrap;
-        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
-        color:rgb(241, 239, 239) ;
-    }
-    &__header{ aca lo que tendria que hacer es algo para que cuando es hamburguesa no quede al medio
-        display: flex;
-        flex-direction: column;
-        align-items:flex-end;
-        justify-content: center;
-        background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
-    }*/
-/*.logoPrincipal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-
-.resaltado:hover{
-    color: rgb(0, 0, 0);
-}
-a:visited{
-    color: rgb(194, 209, 225);
-}
-/*
-.bg-color{
-    background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
-}
-
-.font-color a{
-    color:rgb(255, 255, 255);
-}
-*/
-/* quiero agregarle color a las letras del nav cuando paso el mouse pero no puedo
-.nav-item:hover{
-    transform: ;
-}
-
-.dropdown-menu{
-    background-image: linear-gradient(to top, rgb(19, 43, 129), rgb(80, 78, 219));
-    color: white;
-}
-flex direction, wrap es para que se agrupen cuando achico la pantalla
-
-li{
-    padding: 1rem;
-}
-a{
-    text-decoration: none;
-}
-/*
-.header__navegacion li>a{
-    color:rgb(241, 239, 239) ;
-    padding: 0,5rem;
-    font-family: 'Roboto Slab', serif
-      
-}   
-*/
-/**/
 .navbar-color {
   background-image: linear-gradient(to top, #0f0b3c, #1f4083);
   color: #ceced5; }
@@ -313,35 +239,59 @@ a{
 /*clave valor*/
 /*Each*/
 .key1-card {
-  background-image: url(../recursos/Productos/procesadora.jpg);
-  background-size: cover;
-  padding: 10px;
-  width: 30rem;
-  height: 20rem;
-  background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
+  background-image: url(../recursos/Productos/key1.jpg); }
 
 .key2-card {
-  background-image: url(../recursos/Productos/licuadora.jpg);
-  background-size: cover;
-  padding: 10px;
-  width: 30rem;
-  height: 20rem;
-  background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
+  background-image: url(../recursos/Productos/key2.jpg); }
 
 .key3-card {
-  background-image: url(../recursos/Productos/waflera.jpg);
-  background-size: cover;
-  padding: 10px;
-  width: 30rem;
-  height: 20rem;
-  background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
+  background-image: url(../recursos/Productos/key3.jpg); }
 
 .key4-card {
-  background-image: url(../recursos/Productos/tostadora.jpg);
-  background-size: cover;
-  padding: 10px;
-  width: 30rem;
-  height: 20rem;
+  background-image: url(../recursos/Productos/key4.jpg); }
+
+.key5-card {
+  background-image: url(../recursos/Productos/key5.jpg); }
+
+.key6-card {
+  background-image: url(../recursos/Productos/key6.jpg); }
+
+.key7-card {
+  background-image: url(../recursos/Productos/key7.jpg); }
+
+.key8-card {
+  background-image: url(../recursos/Productos/key8.jpg); }
+
+.key9-card {
+  background-image: url(../recursos/Productos/key9.jpg); }
+
+.key10-card {
+  background-image: url(../recursos/Productos/key10.jpg); }
+
+.key11-card {
+  background-image: url(../recursos/Productos/key11.jpg); }
+
+.key12-card {
+  background-image: url(../recursos/Productos/key12.jpg); }
+
+.key13-card {
+  background-image: url(../recursos/Productos/key13.jpg); }
+
+.key14-card {
+  background-image: url(../recursos/Productos/key14.jpg); }
+
+.key15-card {
+  background-image: url(../recursos/Productos/key15.jpg); }
+
+.key16-card {
+  background-image: url(../recursos/Productos/key16.jpg); }
+
+.gal {
+  margin: 5px;
+  padding: 5px;
+  width: 400px;
+  height: 400px;
+  border-radius: 100px;
   background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
 
 titulo {
@@ -356,31 +306,87 @@ titulo {
   font-size: size;
   color: linear-gradient(to top, #0f0b3c, #1f4083); }
 
-@media (min-width: 540px) {
+@media (min-width: 540px) and (max-width: 1000px) {
   .key1-card {
-    background-image: url(../recursos/Productos/procesadora.jpg);
+    background-image: url(../recursos/Productos/key1.jpg);
     background-size: cover;
-    width: 7rem;
-    height: 7rem;
-    background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
+    width: 100px;
+    height: 100px; }
   .key2-card {
-    background-image: url(../recursos/Productos/licuadora.jpg);
+    background-image: url(../recursos/Productos/key2.jpg);
     background-size: cover;
-    width: 7rem;
-    height: 7rem;
-    background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
+    width: 100px;
+    height: 100px; }
   .key3-card {
-    background-image: url(../recursos/Productos/waflera.jpg);
+    background-image: url(../recursos/Productos/key3.jpg);
     background-size: cover;
-    width: 7rem;
-    height: 7rem;
-    background-color: linear-gradient(to top, #0f0b3c, #1f4083); }
+    width: 100px;
+    height: 100px; }
   .key4-card {
-    background-image: url(../recursos/Productos/tostadora.jpg);
+    background-image: url(../recursos/Productos/key4.jpg);
     background-size: cover;
-    width: 7rem;
-    height: 7rem;
-    background-color: linear-gradient(to top, #0f0b3c, #1f4083); } }
+    width: 100px;
+    height: 100px; }
+  .key5-card {
+    background-image: url(../recursos/Productos/key5.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key6-card {
+    background-image: url(../recursos/Productos/key6.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key7-card {
+    background-image: url(../recursos/Productos/key7.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key8-card {
+    background-image: url(../recursos/Productos/key8.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key9-card {
+    background-image: url(../recursos/Productos/key9.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key10-card {
+    background-image: url(../recursos/Productos/key10.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key11-card {
+    background-image: url(../recursos/Productos/key11.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key12-card {
+    background-image: url(../recursos/Productos/key12.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key13-card {
+    background-image: url(../recursos/Productos/key13.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key14-card {
+    background-image: url(../recursos/Productos/key14.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key15-card {
+    background-image: url(../recursos/Productos/key15.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .key16-card {
+    background-image: url(../recursos/Productos/key16.jpg);
+    background-size: cover;
+    width: 100px;
+    height: 100px; } }
 
 .mainProductos__titulo {
   display: flex;
@@ -388,7 +394,7 @@ titulo {
   align-items: center;
   justify-content: center;
   color: #161680;
-  background-image: linear-gradient(to top, white, #cbcbd2);
+  background: linear-gradient(to top, white, #cbcbd2);
   font-family: 'Roboto Slab', serif; }
 
 /*
