@@ -1,23 +1,14 @@
 
-    /*.header__titulo{
-        display: flex;
-        flex-wrap:wrap;
-    
-        font-size: 3rem;
-        
-    }este tampoco me anda*/
 
-@media (min-width:320px) and (max-width:540px) {
-    
+@media (min-width:300px) and (max-width:400px) {
     .header__titulo{
         display: flex;
         flex-wrap:wrap;
+        font-size: 20px;
         
     }
-    .container__boton{
-        font-size: 1rem;
-    }
 }
+
 @media (min-width:400px) and (max-width:600px) {
     
     .header__titulo{
@@ -61,4 +52,23 @@
         border-style: outset;
         
     }como hago aca para achicar las imagenes en modo celular o borrarlas y dejar solo la primera*/
+}
+@media (min-width:600px) and (max-width:933px) {
+    .header__titulo{
+        display: flex;
+        flex-wrap:wrap;
+        font-size: 3rem;
+        
+    }
+}
+@media (min-width:300px) and (max-width:600px) {
+    .grupoImg{
+        display: none;
+    }
+    .portada__productos{
+        font-size: 1000px;
+    }
+    .grupoImg1{
+        border-radius: 10px;
+    }
 }

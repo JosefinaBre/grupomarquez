@@ -31,19 +31,11 @@ $alto:
 /*.resaltado:hover{
      color: rgb(87, 87, 233);
  }como hago aca par ponerle un hover a los botones de nav?*/
-/*.header__titulo{
-        display: flex;
-        flex-wrap:wrap;
-    
-        font-size: 3rem;
-        
-    }este tampoco me anda*/
-@media (min-width: 320px) and (max-width: 540px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .header__titulo {
     display: flex;
-    flex-wrap: wrap; }
-  .container__boton {
-    font-size: 1rem; } }
+    flex-wrap: wrap;
+    font-size: 20px; } }
 
 @media (min-width: 400px) and (max-width: 600px) {
   .header__titulo {
@@ -78,6 +70,20 @@ $alto:
         border-style: outset;
         
     }como hago aca para achicar las imagenes en modo celular o borrarlas y dejar solo la primera*/ }
+
+@media (min-width: 600px) and (max-width: 933px) {
+  .header__titulo {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem; } }
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .grupoImg {
+    display: none; }
+  .portada__productos {
+    font-size: 1000px; }
+  .grupoImg1 {
+    border-radius: 10px; } }
 
 * {
   margin: 0;
@@ -118,8 +124,22 @@ body {
   align-items: center; }
 
 .imgRedonda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
+  border-radius: 150px;
+  border-style: outset; }
+
+.imgRedonda1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
   border-radius: 150px;
   border-style: outset; }
 
