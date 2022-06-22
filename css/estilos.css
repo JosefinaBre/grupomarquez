@@ -31,21 +31,13 @@ $alto:
 /*.resaltado:hover{
      color: rgb(87, 87, 233);
  }como hago aca par ponerle un hover a los botones de nav?*/
-@media (min-width: 541px) and (max-width: 800px) {
-  .header__titulo {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 2rem; }
-  .container__boton {
-    font-size: 2px; }
-  /*.header__titulo{
+/*.header__titulo{
         display: flex;
         flex-wrap:wrap;
     
         font-size: 3rem;
         
-    }este tampoco me anda*/ }
-
+    }este tampoco me anda*/
 @media (min-width: 320px) and (max-width: 540px) {
   .header__titulo {
     display: flex;
@@ -53,7 +45,7 @@ $alto:
   .container__boton {
     font-size: 1rem; } }
 
-@media (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 400px) and (max-width: 600px) {
   .header__titulo {
     display: flex;
     flex-wrap: wrap;
@@ -118,6 +110,12 @@ body {
   background-color: aliceblue;
   color: #2121a7;
   border: 5px solid #2b5bb6; }
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .imgRedonda {
   width: 100px;

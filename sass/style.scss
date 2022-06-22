@@ -40,7 +40,13 @@ body{
     color: rgb(33, 33, 167);
     border: 5px solid rgb(43, 91, 182);
 }
-
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 .imgRedonda {
     width: 100px;
     height:100px;

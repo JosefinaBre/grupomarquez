@@ -1,14 +1,4 @@
-@media (min-width:541px) and (max-width:800px) {
-   
-    .header__titulo{
-        display: flex;
-        flex-wrap:wrap;
-        font-size: 2rem;
-      
-    }
-    .container__boton{
-        font-size: 2px;
-    }
+
     /*.header__titulo{
         display: flex;
         flex-wrap:wrap;
@@ -16,7 +6,7 @@
         font-size: 3rem;
         
     }este tampoco me anda*/
-}
+
 @media (min-width:320px) and (max-width:540px) {
     
     .header__titulo{
@@ -28,7 +18,7 @@
         font-size: 1rem;
     }
 }
-@media (min-width:400px) and (max-width:800px) {
+@media (min-width:400px) and (max-width:600px) {
     
     .header__titulo{
         display: flex;
