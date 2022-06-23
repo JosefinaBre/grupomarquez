@@ -31,11 +31,15 @@ $alto:
 /*.resaltado:hover{
      color: rgb(87, 87, 233);
  }como hago aca par ponerle un hover a los botones de nav?*/
-@media (min-width: 300px) and (max-width: 413px) {
+/*Index*/
+@media (min-width: 200px) and (max-width: 413px) {
   .header__titulo {
     display: flex;
     flex-wrap: wrap;
-    font-size: 20px; } }
+    font-size: 20px; }
+  .container__tituloDos {
+    font-size: 2px;
+    /*no funca*/ } }
 
 @media (min-width: 414px) and (max-width: 600px) {
   .header__titulo {
@@ -85,12 +89,9 @@ $alto:
   .portada__productos {
     font-size: 40px; }
   .grupoImg1 {
-    border-radius: 10px; }
-  .container__tituloDos {
-    display: flex;
-    font-size: 2px;
-    /*no funca*/ } }
+    border-radius: 10px; } }
 
+/*Productos*/
 * {
   margin: 0;
   padding: 0; }
@@ -158,12 +159,12 @@ body {
   transform: scale(1.2, 1.2);
   border-style: outset; }
 
-.container {
+.container1 {
   /* con col armar diferentes partes, en el caso de querer una medida especial de pantalla por ej la imagen*/
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .container__tituloDos {
+  .container1__tituloDos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,9 +175,9 @@ body {
     font-size: 2rem;
     margin: none;
     padding: 2rem; }
-  .container__padreBoton {
+  .container1__padreBoton {
     align-self: center; }
-  .container__boton {
+  .container1__boton {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,7 +185,7 @@ body {
     background-image: linear-gradient(to top, black, #1c3870);
     font-family: "Oswald", sans-serif;
     color: #e1e1f2; }
-  .container__boton:hover {
+  .container1__boton:hover {
     transform: scale(2); }
 
 .portada {
@@ -260,10 +261,6 @@ body {
   font-family: Arial, Helvetica, sans-serif; }
 
 /* Productos*/
-.flex {
-  display: flex;
-  gap: 15px; }
-
 titulo {
   font-size: size;
   color: linear-gradient(to top, #0f0b3c, #1f4083); }
@@ -285,14 +282,26 @@ titulo {
   background: linear-gradient(to top, white, #cbcbd2);
   font-family: 'Roboto Slab', serif; }
 
-.gal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  height: 300px;
-  border-radius: 150px;
-  border-style: outset; }
+/*.producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.gal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height:300px;
+    border-radius:150px;
+    border-style: outset;
+    div {
+        margin: 100px;
+    }
+    
+
+}
 
 /*
 
@@ -494,3 +503,38 @@ esto es para dejar algo fijo y que se mueva el resto , por ej boton de wsp*/
 
 
 me falta tambien armar las etiquetas para los productos*/
+body {
+  box-sizing: border-box;
+  background-color: #0b0b2e;
+  color: #555; }
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.5em; }
+
+header > h1 {
+  margin-top: 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2.5rem;
+  border-bottom: 1px solid #eee; }
+
+.gallery {
+  display: grid;
+  margin: 3em 0;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  grid-auto-flow: dense; }
+
+figure {
+  display: flex;
+  margin: 0; }
+
+img {
+  flex: 1;
+  max-width: 100%;
+  object-fit: cover; }

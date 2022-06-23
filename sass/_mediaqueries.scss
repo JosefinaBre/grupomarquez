@@ -1,13 +1,18 @@
+/*Index*/
 
-
-@media (min-width:300px) and (max-width:413px) {
+@media (min-width:200px) and (max-width:413px) {
     .header__titulo{
         display: flex;
         flex-wrap:wrap;
         font-size: 20px;
         
     }
-   
+    .container__tituloDos{
+        
+        font-size: 2px;
+        /*no funca*/
+        
+    } 
 
 }
 @media (min-width:414px) and (max-width:600px) {
@@ -74,12 +79,8 @@
     .grupoImg1{
         border-radius: 10px;
     }
-    .container__tituloDos{
-        display:flex;
-        font-size: 2px;
-        /*no funca*/
-        
-    } 
+    
 }
 
+/*Productos*/
 
