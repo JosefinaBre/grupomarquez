@@ -1,15 +1,16 @@
 
 
-@media (min-width:300px) and (max-width:400px) {
+@media (min-width:300px) and (max-width:413px) {
     .header__titulo{
         display: flex;
         flex-wrap:wrap;
         font-size: 20px;
         
     }
-}
+   
 
-@media (min-width:400px) and (max-width:600px) {
+}
+@media (min-width:414px) and (max-width:600px) {
     
     .header__titulo{
         display: flex;
@@ -19,6 +20,8 @@
     }
     .container__boton{
         font-size: 1rem;
+        margin: 200px;
+        padding: 2px;
 
     }
     /*.footer{
@@ -37,7 +40,7 @@
     
     
     .carousel{
-        height: 100px;
+        margin: 5px;
     }
         /*Tengo que hacer responsive productos
 
@@ -66,9 +69,17 @@
         display: none;
     }
     .portada__productos{
-        font-size: 1000px;
+        font-size: 40px;
     }
     .grupoImg1{
         border-radius: 10px;
     }
+    .container__tituloDos{
+        display:flex;
+        font-size: 2px;
+        /*no funca*/
+        
+    } 
 }
+
+

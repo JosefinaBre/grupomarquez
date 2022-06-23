@@ -31,19 +31,21 @@ $alto:
 /*.resaltado:hover{
      color: rgb(87, 87, 233);
  }como hago aca par ponerle un hover a los botones de nav?*/
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 413px) {
   .header__titulo {
     display: flex;
     flex-wrap: wrap;
     font-size: 20px; } }
 
-@media (min-width: 400px) and (max-width: 600px) {
+@media (min-width: 414px) and (max-width: 600px) {
   .header__titulo {
     display: flex;
     flex-wrap: wrap;
     font-size: 2rem; }
   .container__boton {
-    font-size: 1rem; }
+    font-size: 1rem;
+    margin: 200px;
+    padding: 2px; }
   /*.footer{
         display: flex;
         flex-direction: column;
@@ -56,7 +58,7 @@ $alto:
   .potada__productos {
     font-size: 5px; }
   .carousel {
-    height: 100px; }
+    margin: 5px; }
   /*Tengo que hacer responsive productos
 
     
@@ -81,9 +83,13 @@ $alto:
   .grupoImg {
     display: none; }
   .portada__productos {
-    font-size: 1000px; }
+    font-size: 40px; }
   .grupoImg1 {
-    border-radius: 10px; } }
+    border-radius: 10px; }
+  .container__tituloDos {
+    display: flex;
+    font-size: 2px;
+    /*no funca*/ } }
 
 * {
   margin: 0;
@@ -121,13 +127,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: #161680;
+  font-size: xx-large;
+  font-family: 'Roboto Slab', serif; }
 
 .imgRedonda {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
   width: 100px;
   height: 100px;
   border-radius: 150px;
@@ -138,8 +148,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
+  margin: 10px;
+  width: 110px;
+  height: 110px;
   border-radius: 150px;
   border-style: outset; }
 
@@ -160,7 +171,7 @@ body {
     background-image: linear-gradient(to top, #0f0b3c, #1f4083);
     color: #b4c6d8;
     font-family: "Oswald", sans-serif;
-    font-size: 5rem;
+    font-size: 2rem;
     margin: none;
     padding: 2rem; }
   .container__padreBoton {
@@ -169,6 +180,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 10px;
     background-image: linear-gradient(to top, black, #1c3870);
     font-family: "Oswald", sans-serif;
     color: #e1e1f2; }
@@ -181,15 +193,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  /*align-items: center;*/
+  align-items: center;
   padding: 1rem;
   margin: 2rem;
   background-image: linear-gradient(to top, #7983c7, #d9d9c4);
   /* probar con flex direction, background image ,height, justify content center, align item center*/ }
-  .portada__productos {
-    color: #161680;
-    font-size: xx-large;
-    font-family: 'Roboto Slab', serif; }
 
 /* ancho se dice width y alto height */
 /* index ultima section*/
