@@ -277,6 +277,7 @@ titulo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2px;
   justify-content: center;
   color: #161680;
   background: linear-gradient(to top, white, #cbcbd2);
@@ -505,7 +506,7 @@ esto es para dejar algo fijo y que se mueva el resto , por ej boton de wsp*/
 me falta tambien armar las etiquetas para los productos*/
 body {
   box-sizing: border-box;
-  background-color: #0b0b2e;
+  background-color: #f3f3f5;
   color: #555; }
 
 .container {

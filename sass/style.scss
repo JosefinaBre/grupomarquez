@@ -238,12 +238,16 @@ $tamanos:(h1: 3rem, h2: 1.5rem, h3: 0.25rem);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2px;
     justify-content: center;
     color: rgb(22, 22, 128);    
     background: linear-gradient(to top, rgb(255, 255, 255), rgb(203, 203, 210));
     font-family: 'Roboto Slab', serif;
 
 }
+
+
+    
 /*.producto{
     display: flex;
     flex-direction: row;
@@ -475,7 +479,7 @@ me falta tambien armar las etiquetas para los productos*/
 
 body {
     box-sizing: border-box;
-    background-color: rgb(11, 11, 46);
+    background-color: rgb(243, 243, 245);
     color: #555;
   }
   
@@ -508,9 +512,10 @@ body {
     display: flex;
     margin: 0;
   }
-  
+ 
   img {
     flex: 1;
     max-width: 100%;
     object-fit: cover;
+    
   }
