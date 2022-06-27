@@ -4,6 +4,7 @@
 @import 'footer';
 @import 'mediaqueries';
 
+/* GENERAL*/
 *{
     margin: 0;
     padding: 0;
@@ -12,9 +13,7 @@ body{
     background-color: rgb(226, 225, 230);
 }
 
-/*.navbar:hover{ como mierda hago para que cambie de color
-    color: rgb(77, 77, 241);
-}*/
+
 .navbar-color{
     background-image: $color-primary;
     color: rgb(206, 206, 213);
@@ -40,7 +39,7 @@ body{
     color: rgb(33, 33, 167);
     border: 5px solid rgb(43, 91, 182);
 }
-
+/*INDEX*/
 .producto{
     display: flex;
     flex-direction: column;
@@ -94,7 +93,7 @@ body{
         background-image: $color-primary; 
         color :rgb(180, 198, 216) ;
         font-family: $font-principal;
-        font-size: 2rem;
+    
         margin: none;
         padding: 2rem;
     }
@@ -139,22 +138,7 @@ body{
 
 /* ancho se dice width y alto height */
 
-/* index ultima section*/
 
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 100px;
-    color: rgb(22, 22, 128);
-    background-color: rgb(255, 255, 255);
-    font-family: 'Roboto Slab', serif
-    
-
-
-}
 
 /* Contacto */
 .contacto{
@@ -190,11 +174,12 @@ body{
 .form-select{
     color: rgb(22, 22, 128);
 }
-/**/
+
 
 /* Preg frecuentes*/
 
 .main__pregFrec{
+    margin: 2rem;
     color: rgb(22, 22, 128);
     background-color: rgb(241, 239, 239);
     font-family: 'Roboto Slab', serif
@@ -210,6 +195,11 @@ body{
     padding: 20px;
     border-radius: 20px;
     
+    &__1{
+
+        font-size: x-large;
+    }
+    
 }
 
 /**/
@@ -220,14 +210,20 @@ body{
     margin: 2rem;
     color: rgb(22, 22, 128);
     background-color: rgb(241, 239, 239);
-    font-family: 'Roboto Slab', serif 
+    font-family: 'Roboto Slab', serif ;
     
-}
-
-.sectionSobreNos__historia{
+    &__historia {
     margin: 2rem ;
-    font-family:Arial, Helvetica, sans-serif
-   
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    &__titulo{
+    font-size:x-large;
+    }
+
+    &__ubicacion {
+    margin: 5px;
+    }
 
 }
 
@@ -260,72 +256,7 @@ $tamanos:(h1: 3rem, h2: 1.5rem, h3: 0.25rem);
 }
 
 
-    
-/*.producto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 
-}
-.gal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height:300px;
-    border-radius:150px;
-    border-style: outset;
-    div {
-        margin: 100px;
-    }
-    
-
-}
-
-/*
-
-
-
-
-.mainProductos__foto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 20px solid cornflowerblue;
-    border-style: outset;
-}
-    
-
-
-.mainProductos__boton{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    border: 10px solid rgb(43, 91, 182);
-    border-style: outset;
-}
-
-/*media querie --min with: minimo
-max with: maximo*/
-
-
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image:  rgb(241, 239, 239); 
-    color :$color-primary;
-    font-family: $font-principal;
-    font-size: 13px;
-    
-    margin: 2rem;
-    padding: 1rem;
-}
 
 
 /* display none es para esconder algo, por ej para pasar de compu a celu escondes el titulo grande y pones uno mas chiquito*/
@@ -335,10 +266,7 @@ bottom:0
 right:0 
 esto es para dejar algo fijo y que se mueva el resto , por ej boton de wsp*/
 
-/*border radius es para bordes redondeados
 
-
-me falta tambien armar las etiquetas para los productos*/
 
 body {
     box-sizing: border-box;

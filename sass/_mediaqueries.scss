@@ -1,4 +1,4 @@
-/*Index*/
+
 
 @media (min-width:200px) and (max-width:413px) {
     .header__titulo{
@@ -7,11 +7,13 @@
         font-size: 20px;
         
     }
-    .container__tituloDos{
+    .container1__tituloDos{
         
-        font-size: 2px;
-        /*no funca*/
+        display: flex;
+        flex-wrap:wrap;
+        font-size: 10px;
         
+    
     } 
     
 
@@ -24,22 +26,22 @@
         font-size: 2rem;
         
     }
+    .container1__tituloDos{
+        
+        display: flex;
+        flex-wrap:wrap;
+        font-size: 1rem;
+        
+    
+    } 
+   
     .container__boton{
         font-size: 1rem;
         margin: 200px;
         padding: 2px;
 
     }
-    /*.footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 5px;
-    
-       
-    }no se como achicar la letra en celular */
-
+  
     .potada__productos{
         font-size: 5px; 
     }
@@ -48,27 +50,24 @@
     .carousel{
         margin: 5px;
     }
-        /*Tengo que hacer responsive productos
-
+     
     
-
-    .imgRedonda {
-        display: flex;
-        flex-wrap:wrap;
-        width: 50px;
-        height: 50px;
-        border-radius:50px;
-        border-style: outset;
-        
-    }como hago aca para achicar las imagenes en modo celular o borrarlas y dejar solo la primera*/
 }
-@media (min-width:600px) and (max-width:933px) {
+@media (min-width:600px) and (max-width:2220px) {
     .header__titulo{
         display: flex;
         flex-wrap:wrap;
         font-size: 3rem;
         
     }
+    .container1__tituloDos{
+        
+        display: flex;
+        flex-wrap:wrap;
+        font-size: 2rem;
+        
+    
+    } 
 }
 @media (min-width:300px) and (max-width:600px) {
     .grupoImg{
@@ -83,5 +82,18 @@
     
 }
 
-/*Productos*/
 
+@media (min-width:300px) and (max-width:570px) {
+    .footer{
+        display: flex;
+        font-size: 10px;
+        
+    }
+}
+@media (min-width:300px) and (max-width:700px) {
+    
+    iframe {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -14,74 +14,66 @@ $font-body:
 $ancho:
 $alto:
 */
-.header {
-  /*aca pasa algo que se me rompe*/ }
-  .header__titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to top, #0f0b3c, #1f4083);
-    color: #f1efef;
-    font-family: "Oswald", sans-serif;
-    font-size: 5rem;
-    margin: none;
-    padding: 2rem; }
+.header__titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #0f0b3c, #1f4083);
+  color: #f1efef;
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+  margin: none;
+  padding: 2rem; }
 
-/*.resaltado:hover{
-     color: rgb(87, 87, 233);
- }como hago aca par ponerle un hover a los botones de nav?*/
-/*Index*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: none;
+  padding: 2rem;
+  color: #161680;
+  background-color: white;
+  font-family: 'Roboto Slab', serif; }
+
 @media (min-width: 200px) and (max-width: 413px) {
   .header__titulo {
     display: flex;
     flex-wrap: wrap;
     font-size: 20px; }
-  .container__tituloDos {
-    font-size: 2px;
-    /*no funca*/ } }
+  .container1__tituloDos {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px; } }
 
 @media (min-width: 414px) and (max-width: 600px) {
   .header__titulo {
     display: flex;
     flex-wrap: wrap;
     font-size: 2rem; }
+  .container1__tituloDos {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem; }
   .container__boton {
     font-size: 1rem;
     margin: 200px;
     padding: 2px; }
-  /*.footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 5px;
-    
-       
-    }no se como achicar la letra en celular */
   .potada__productos {
     font-size: 5px; }
   .carousel {
-    margin: 5px; }
-  /*Tengo que hacer responsive productos
+    margin: 5px; } }
 
-    
-
-    .imgRedonda {
-        display: flex;
-        flex-wrap:wrap;
-        width: 50px;
-        height: 50px;
-        border-radius:50px;
-        border-style: outset;
-        
-    }como hago aca para achicar las imagenes en modo celular o borrarlas y dejar solo la primera*/ }
-
-@media (min-width: 600px) and (max-width: 933px) {
+@media (min-width: 600px) and (max-width: 2220px) {
   .header__titulo {
     display: flex;
     flex-wrap: wrap;
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .container1__tituloDos {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem; } }
 
 @media (min-width: 300px) and (max-width: 600px) {
   .grupoImg {
@@ -91,7 +83,17 @@ $alto:
   .grupoImg1 {
     border-radius: 10px; } }
 
-/*Productos*/
+@media (min-width: 300px) and (max-width: 570px) {
+  .footer {
+    display: flex;
+    font-size: 10px; } }
+
+@media (min-width: 300px) and (max-width: 700px) {
+  iframe {
+    width: 200px;
+    height: 200px; } }
+
+/* GENERAL*/
 * {
   margin: 0;
   padding: 0; }
@@ -99,9 +101,6 @@ $alto:
 body {
   background-color: #e2e1e6; }
 
-/*.navbar:hover{ como mierda hago para que cambie de color
-    color: rgb(77, 77, 241);
-}*/
 .navbar-color {
   background-image: linear-gradient(to top, #0f0b3c, #1f4083);
   color: #ceced5; }
@@ -124,6 +123,7 @@ body {
   color: #2121a7;
   border: 5px solid #2b5bb6; }
 
+/*INDEX*/
 .producto {
   display: flex;
   flex-direction: column;
@@ -172,7 +172,6 @@ body {
     background-image: linear-gradient(to top, #0f0b3c, #1f4083);
     color: #b4c6d8;
     font-family: "Oswald", sans-serif;
-    font-size: 2rem;
     margin: none;
     padding: 2rem; }
   .container1__padreBoton {
@@ -201,17 +200,6 @@ body {
   /* probar con flex direction, background image ,height, justify content center, align item center*/ }
 
 /* ancho se dice width y alto height */
-/* index ultima section*/
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 100px;
-  color: #161680;
-  background-color: white;
-  font-family: 'Roboto Slab', serif; }
-
 /* Contacto */
 .contacto {
   display: flex;
@@ -241,12 +229,25 @@ body {
 .form-select {
   color: #161680; }
 
-/**/
 /* Preg frecuentes*/
 .main__pregFrec {
+  margin: 2rem;
   color: #161680;
   background-color: #f1efef;
   font-family: 'Roboto Slab', serif; }
+
+.pregunta1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #121278;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px; }
+  .pregunta1__1 {
+    font-size: x-large; }
 
 /**/
 /*Sobre Nosotros*/
@@ -255,10 +256,13 @@ body {
   color: #161680;
   background-color: #f1efef;
   font-family: 'Roboto Slab', serif; }
-
-.sectionSobreNos__historia {
-  margin: 2rem;
-  font-family: Arial, Helvetica, sans-serif; }
+  .sectionSobreNos__historia {
+    margin: 2rem;
+    font-family: Arial, Helvetica, sans-serif; }
+  .sectionSobreNos__titulo {
+    font-size: x-large; }
+  .sectionSobreNos__ubicacion {
+    margin: 5px; }
 
 /* Productos*/
 titulo {
@@ -281,218 +285,8 @@ titulo {
   justify-content: center;
   color: #161680;
   background: linear-gradient(to top, white, #cbcbd2);
-  font-family: 'Roboto Slab', serif; }
-
-/*.producto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-.gal{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height:300px;
-    border-radius:150px;
-    border-style: outset;
-    div {
-        margin: 100px;
-    }
-    
-
-}
-
-/*
-
-.grid__container{
-    display: grid;
-    border: none;
-    grid-template-rows: 200px 200px 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 15px;
-
-}
-
-.grid__item{
-    display: flex;
-    flex-direction:inherit;
-    gap: 25px;
-    border: 10px solid cornflowerblue;
-    background-color: rgb(249, 249, 249);
-}
-.grid__item:hover{
-    transform: scale(1,2);
-}
-
-.grid__uno{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/waflera.png")
-     
-}
-.grid__dos{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/tostadora.png")
-    
-}
-.grid__tres{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/sanguchera.png")
-}
-.grid__cuatro{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image:url("../recursos/vaporera.png")
-}
-.grid__cinco{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/robot.png")
-}
-.grid__seis{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/pasta.png")
-}
-.grid__siete{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/freidora.png")
-}
-.grid__ocho{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/sopera.png")
-}
-.grid__nueve{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/panera.png")
-}
-.grid__diez{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/batidora.png")
-}
-.grid__once{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/multiprocesadora.png")
-}
-.grid__doce{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/procesadora.png")
-}
-.grid__trece{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/licuadora1.png")
-}
-.grid__catorce{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/pava.png")
-}
-.grid__quince{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/cafetera.png")
-}
-.grid__diesciseis{
-    grid-row: 1fr;
-    grid-column: 1fr;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../recursos/termo.png")
-    
-}
-
-
-.mainProductos__foto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 20px solid cornflowerblue;
-    border-style: outset;
-}
-    
-
-
-.mainProductos__boton{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    border: 10px solid rgb(43, 91, 182);
-    border-style: outset;
-}
-
-/*media querie --min with: minimo
-max with: maximo*/
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: #f1efef;
-  color: linear-gradient(to top, #0f0b3c, #1f4083);
-  font-family: "Oswald", sans-serif;
-  font-size: 13px;
-  margin: 2rem;
-  padding: 1rem; }
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem; }
 
 /* display none es para esconder algo, por ej para pasar de compu a celu escondes el titulo grande y pones uno mas chiquito*/
 /*position:fixed
@@ -500,10 +294,6 @@ width:50
 bottom:0
 right:0 
 esto es para dejar algo fijo y que se mueva el resto , por ej boton de wsp*/
-/*border radius es para bordes redondeados
-
-
-me falta tambien armar las etiquetas para los productos*/
 body {
   box-sizing: border-box;
   background-color: #f3f3f5;
